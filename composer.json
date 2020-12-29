@@ -11,7 +11,7 @@
         "liaison/revision": "1.x-dev"
     },
     "require-dev": {
-        "fzaninotto/faker": "^1.9@dev",
+        "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "1.6.*",
         "phpunit/phpunit": "^9.0"
     },
