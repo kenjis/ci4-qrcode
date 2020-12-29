@@ -7,7 +7,8 @@
     "require": {
         "php": ">=7.2",
         "codeigniter4/translations": "dev-develop",
-        "codeigniter4/codeigniter4": "dev-develop"
+        "codeigniter4/codeigniter4": "dev-develop",
+        "liaison/revision": "1.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9@dev",
