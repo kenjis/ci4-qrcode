@@ -63,7 +63,7 @@ class App extends BaseConfig
 	| should run under for this request.
 	|
 	*/
-	public $defaultLocale = 'en';
+	public $defaultLocale = 'ja';
 
 	/*
 	|--------------------------------------------------------------------------
@@ -99,7 +99,7 @@ class App extends BaseConfig
 	| dates with the date helper, and can be retrieved through app_timezone()
 	|
 	*/
-	public $appTimezone = 'America/Chicago';
+	public $appTimezone = 'Asia/Tokyo';
 
 	/*
 	|--------------------------------------------------------------------------
