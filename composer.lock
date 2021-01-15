@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "e5721a4bcd52488c614dad7e363b7d443a7cffd1"
+                "reference": "45a7972fa56755ad8bd82c0b25cb0b1587c79da1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/e5721a4bcd52488c614dad7e363b7d443a7cffd1",
-                "reference": "e5721a4bcd52488c614dad7e363b7d443a7cffd1",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/45a7972fa56755ad8bd82c0b25cb0b1587c79da1",
+                "reference": "45a7972fa56755ad8bd82c0b25cb0b1587c79da1",
                 "shasum": ""
             },
             "require": {
@@ -34,11 +34,14 @@
                 "codeigniter4/codeigniter4-standard": "^1.0",
                 "fakerphp/faker": "^1.9",
                 "mikey179/vfsstream": "^1.6",
-                "phpstan/phpstan": "^0.12",
-                "phpunit/phpunit": "^8.5",
+                "phpstan/phpstan": "0.12.65",
+                "phpunit/phpunit": "^8.5 || ^9.1",
                 "predis/predis": "^1.1",
                 "rector/rector": "^0.8",
                 "squizlabs/php_codesniffer": "^3.3"
+            },
+            "suggest": {
+                "ext-fileinfo": "Improves mime type detection for files"
             },
             "default-branch": true,
             "type": "project",
@@ -49,7 +52,8 @@
             },
             "autoload-dev": {
                 "psr-4": {
-                    "Utils\\": "utils"
+                    "CodeIgniter\\": "tests/system/",
+                    "Utils\\": "utils/"
                 }
             },
             "scripts": {
@@ -75,7 +79,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2020-12-28T11:52:11+00:00"
+            "time": "2021-01-14T17:19:30+00:00"
         },
         {
             "name": "codeigniter4/translations",
@@ -83,12 +87,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/translations.git",
-                "reference": "4c8d8a0741e936964e5847fbece19d6dffa120e8"
+                "reference": "c1d2b418bf77ccd896eaf0c395010113f49bf8cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/translations/zipball/4c8d8a0741e936964e5847fbece19d6dffa120e8",
-                "reference": "4c8d8a0741e936964e5847fbece19d6dffa120e8",
+                "url": "https://api.github.com/repos/codeigniter4/translations/zipball/c1d2b418bf77ccd896eaf0c395010113f49bf8cc",
+                "reference": "c1d2b418bf77ccd896eaf0c395010113f49bf8cc",
                 "shasum": ""
             },
             "require": {
@@ -127,7 +131,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "source": "https://github.com/codeigniter4/translations"
             },
-            "time": "2020-12-21T06:01:58+00:00"
+            "time": "2021-01-08T06:39:12+00:00"
         },
         {
             "name": "kint-php/kint",
@@ -332,12 +336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/paulbalandan/liaison-revision.git",
-                "reference": "9bb791224b4cff1de9576e5ba8023d7d23f0581e"
+                "reference": "b03ddfb0025e900e89d65b19f8f6a11a6c220f55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paulbalandan/liaison-revision/zipball/9bb791224b4cff1de9576e5ba8023d7d23f0581e",
-                "reference": "9bb791224b4cff1de9576e5ba8023d7d23f0581e",
+                "url": "https://api.github.com/repos/paulbalandan/liaison-revision/zipball/b03ddfb0025e900e89d65b19f8f6a11a6c220f55",
+                "reference": "b03ddfb0025e900e89d65b19f8f6a11a6c220f55",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +395,7 @@
                 "issues": "https://github.com/paulbalandan/liaison-revision/issues",
                 "source": "https://github.com/paulbalandan/liaison-revision"
             },
-            "time": "2020-12-03T14:13:25+00:00"
+            "time": "2021-01-14T16:04:01+00:00"
         },
         {
             "name": "psr/log",
@@ -573,16 +577,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.20.0",
+            "version": "v1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f4ba089a5b6366e453971d3aad5fe8e897b37f41",
-                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/c6c942b1ac76c82448322025e084cadc56048b4e",
+                "reference": "c6c942b1ac76c82448322025e084cadc56048b4e",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +598,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.20-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -632,7 +636,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.20.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
             },
             "funding": [
                 {
@@ -648,20 +652,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-23T14:02:19+00:00"
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.20.0",
+            "version": "v1.22.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de"
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
-                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dc3063ba22c2a1fd2f45ed856374d79114998f91",
+                "reference": "dc3063ba22c2a1fd2f45ed856374d79114998f91",
                 "shasum": ""
             },
             "require": {
@@ -670,7 +674,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.20-dev"
+                    "dev-main": "1.22-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -715,7 +719,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.20.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
             },
             "funding": [
                 {
@@ -731,7 +735,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-23T14:02:19+00:00"
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/process",
