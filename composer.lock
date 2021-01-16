@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce020dcd042ee6469f1b020614ca93d9",
+    "content-hash": "37550e9644f3134fca5ddf68f0ba8cfc",
     "packages": [
         {
             "name": "codeigniter4/codeigniter4",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "45a7972fa56755ad8bd82c0b25cb0b1587c79da1"
+                "reference": "bbe67ee99e332673ca80b115f7f17bbd8544a593"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/45a7972fa56755ad8bd82c0b25cb0b1587c79da1",
-                "reference": "45a7972fa56755ad8bd82c0b25cb0b1587c79da1",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/bbe67ee99e332673ca80b115f7f17bbd8544a593",
+                "reference": "bbe67ee99e332673ca80b115f7f17bbd8544a593",
                 "shasum": ""
             },
             "require": {
@@ -79,7 +79,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2021-01-14T17:19:30+00:00"
+            "time": "2021-01-16T02:26:06+00:00"
         },
         {
             "name": "codeigniter4/translations",
@@ -2856,7 +2856,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2"
+        "php": ">=7.3"
     },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
