@@ -1,5 +1,11 @@
 # CodeIgniter 4 Application Template
 
+This repository includes:
+
+- CodeIgniter 4.0.5-dev
+- PHPUnit 9.5.0
+- [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
+
 ## What is CodeIgniter?
 
 CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
@@ -16,7 +22,7 @@ The user guide corresponding to this version of the framework can be found
 
 ## Server Requirements
 
-PHP version 7.2 or higher is required, with the following extensions installed: 
+PHP version 7.3 or higher is required, with the following extensions installed: 
 
 - [intl](http://php.net/manual/en/intl.requirements.php)
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
