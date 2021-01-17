@@ -29,6 +29,11 @@
         "cs-fix": "phpcbf",
         "cs": "phpcs"
     },
+    "scripts-descriptions": {
+        "test": "Run PHPUnit",
+        "cs": "Check the coding style",
+        "cs-fix": "Fix the coding style"
+    },
     "support": {
         "forum": "http://forum.codeigniter.com/",
         "source": "https://github.com/codeigniter4/CodeIgniter4",
