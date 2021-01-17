@@ -13,7 +13,8 @@
     "require-dev": {
         "fakerphp/faker": "^1.9",
         "mikey179/vfsstream": "1.6.*",
-        "phpunit/phpunit": "^9.0"
+        "phpunit/phpunit": "^9.0",
+        "bear/qatools": "^1.9"
     },
     "autoload-dev": {
         "psr-4": {
