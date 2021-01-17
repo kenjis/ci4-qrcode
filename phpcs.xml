@@ -11,7 +11,12 @@
     <arg value="nps"/>
 
     <!-- Directories to be checked -->
-    <file>src</file>
+    <file>app/Controllers</file>
+    <file>app/Database</file>
+    <file>app/Filters</file>
+    <file>app/Helpers</file>
+    <file>app/Libraries</file>
+    <file>app/Models</file>
     <file>tests</file>
 
     <!-- Doctrine Coding Standard (Based on PSR-12) -->
