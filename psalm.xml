@@ -8,7 +8,6 @@
 >
     <projectFiles>
         <directory name="app" />
-        <directory name="public" />
         <ignoreFiles>
             <directory name="vendor" />
         </ignoreFiles>
