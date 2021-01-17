@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+namespace Tests\Database;
+
 use Tests\Support\DatabaseTestCase;
 use Tests\Support\Models\ExampleModel;
 

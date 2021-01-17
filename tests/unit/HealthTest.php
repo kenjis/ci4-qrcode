@@ -2,8 +2,15 @@
 
 declare(strict_types=1);
 
+namespace Tests\Unit;
+
 use CodeIgniter\Test\CIUnitTestCase;
 use Tests\Support\Libraries\ConfigReader;
+
+use function defined;
+use function file;
+use function is_file;
+use function preg_grep;
 
 class HealthTest extends CIUnitTestCase
 {

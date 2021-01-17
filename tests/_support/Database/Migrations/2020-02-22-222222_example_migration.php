@@ -8,6 +8,7 @@ use CodeIgniter\Database\Migration;
 
 class ExampleMigration extends Migration
 {
+    /** @var string */
     protected $DBGroup = 'tests';
 
     public function up()

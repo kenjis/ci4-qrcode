@@ -8,12 +8,17 @@ use CodeIgniter\Model;
 
 class ExampleModel extends Model
 {
-    protected $table      = 'factories';
+    /** @var string */
+    protected $table = 'factories';
+    /** @var string */
     protected $primaryKey = 'id';
 
-    protected $returnType     = 'object';
+    /** @var string */
+    protected $returnType = 'object';
+    /** @var bool */
     protected $useSoftDeletes = false;
 
+    /** @var string[] */
     protected $allowedFields = [
         'name',
         'uid',
@@ -22,9 +27,13 @@ class ExampleModel extends Model
         'summary',
     ];
 
+    /** @var bool */
     protected $useTimestamps = true;
 
-    protected $validationRules    = [];
+    /** @var array<string,string> */
+    protected $validationRules = [];
+    /** @var array<string,array<string,string>> */
     protected $validationMessages = [];
-    protected $skipValidation     = false;
+    /** @var bool */
+    protected $skipValidation = false;
 }
