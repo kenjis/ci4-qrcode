@@ -25,7 +25,9 @@
         "post-update-cmd": [
             "@composer dump-autoload"
         ],
-        "test": "phpunit"
+        "test": "phpunit",
+        "cs-fix": "phpcbf",
+        "cs": "phpcs"
     },
     "support": {
         "forum": "http://forum.codeigniter.com/",
