@@ -1,18 +1,22 @@
 <?php
 
-class ExampleSessionTest extends \Tests\Support\SessionTestCase
+declare(strict_types=1);
+
+use Tests\Support\SessionTestCase;
+
+class ExampleSessionTest extends SessionTestCase
 {
-	public function setUp(): void
-	{
-		parent::setUp();
-	}
+    public function setUp(): void
+    {
+        parent::setUp();
+    }
 
-	public function testSessionSimple()
-	{
-		$this->session->set('logged_in', 123);
+    public function testSessionSimple()
+    {
+        $this->session->set('logged_in', 123);
 
-		$value = $this->session->get('logged_in');
+        $value = $this->session->get('logged_in');
 
-		$this->assertEquals(123, $value);
-	}
+        $this->assertEquals(123, $value);
+    }
 }

@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 /**
  * CodeIgniter
@@ -29,27 +30,23 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  *
- * @package    CodeIgniter
- * @author     CodeIgniter Dev Team
- * @copyright  2019-2020 CodeIgniter Foundation
- * @license    https://opensource.org/licenses/MIT	MIT License
  * @link       https://codeigniter.com
- * @since      Version 4.0.0
+ *
  * @filesource
  */
 
 namespace Tests\Support\Libraries;
 
+use Config\App;
+
 /**
- * Class ConfigReader
- *
  * An extension of BaseConfig that prevents the constructor from
  * loading external values. Used to read actual local values from
  * a config file.
  */
-class ConfigReader extends \Config\App
+class ConfigReader extends App
 {
-	public function __construct()
-	{
-	}
+    public function __construct()
+    {
+    }
 }
