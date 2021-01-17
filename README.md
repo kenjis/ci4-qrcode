@@ -5,6 +5,23 @@ This repository includes:
 - CodeIgniter 4.0.5-dev
 - PHPUnit 9.5.0
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
+- [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
+
+## How to Update
+
+```
+$ composer update
+$ php spark revision:update
+```
+
+## Available Commands
+
+```
+composer test              // Run PHPUnit
+composer cs-fix            // Fix the coding style
+composer cs                // Check the coding style
+composer run-script --list // List all commands
+```
 
 ## What is CodeIgniter?
 
