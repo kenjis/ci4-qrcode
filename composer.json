@@ -27,12 +27,16 @@
         ],
         "test": "phpunit",
         "cs-fix": "phpcbf",
-        "cs": "phpcs"
+        "cs": "phpcs",
+        "sa": [
+            "phpstan analyse --no-progress -c phpstan.neon"
+        ]
     },
     "scripts-descriptions": {
         "test": "Run PHPUnit",
         "cs": "Check the coding style",
-        "cs-fix": "Fix the coding style"
+        "cs-fix": "Fix the coding style",
+        "sa": "Run static analysis"
     },
     "support": {
         "forum": "http://forum.codeigniter.com/",
