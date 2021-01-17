@@ -127,3 +127,4 @@ nb-configuration.xml
 /phpunit*.xml
 /.phpunit.*.cache
 
+.phpcs-cache
