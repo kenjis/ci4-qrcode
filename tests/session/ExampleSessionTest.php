@@ -13,7 +13,7 @@ class ExampleSessionTest extends SessionTestCase
         parent::setUp();
     }
 
-    public function testSessionSimple()
+    public function testSessionSimple(): void
     {
         $this->session->set('logged_in', 123);
 

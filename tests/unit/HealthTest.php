@@ -19,14 +19,14 @@ class HealthTest extends CIUnitTestCase
         parent::setUp();
     }
 
-    public function testIsDefinedAppPath()
+    public function testIsDefinedAppPath(): void
     {
         $test = defined('APPPATH');
 
         $this->assertTrue($test);
     }
 
-    public function testBaseUrlHasBeenSet()
+    public function testBaseUrlHasBeenSet(): void
     {
         $env = $config = false;
 

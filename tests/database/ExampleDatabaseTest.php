@@ -16,7 +16,7 @@ class ExampleDatabaseTest extends DatabaseTestCase
         // Extra code to run before each test
     }
 
-    public function testModelFindAll()
+    public function testModelFindAll(): void
     {
         $model = new ExampleModel();
 
@@ -27,7 +27,7 @@ class ExampleDatabaseTest extends DatabaseTestCase
         $this->assertCount(3, $objects);
     }
 
-    public function testSoftDeleteLeavesRow()
+    public function testSoftDeleteLeavesRow(): void
     {
         $model = new ExampleModel();
         $this->setPrivateProperty($model, 'useSoftDeletes', true);
