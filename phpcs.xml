@@ -31,4 +31,9 @@
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingNativeTypeHint"/>
     </rule>
+
+    <rule ref="Squiz.Classes.ClassFileName.NoMatch">
+        <exclude-pattern>app/Database/Migrations/*</exclude-pattern>
+        <exclude-pattern>tests/_support/Database/Migrations/*</exclude-pattern>
+    </rule>
 </ruleset>
