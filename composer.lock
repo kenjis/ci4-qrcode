@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "bbe67ee99e332673ca80b115f7f17bbd8544a593"
+                "reference": "8f88e9c591ea876d299f729fc18a26f061c8b3db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/bbe67ee99e332673ca80b115f7f17bbd8544a593",
-                "reference": "bbe67ee99e332673ca80b115f7f17bbd8544a593",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/8f88e9c591ea876d299f729fc18a26f061c8b3db",
+                "reference": "8f88e9c591ea876d299f729fc18a26f061c8b3db",
                 "shasum": ""
             },
             "require": {
@@ -79,7 +79,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2021-01-16T02:26:06+00:00"
+            "time": "2021-01-16T17:46:18+00:00"
         },
         {
             "name": "codeigniter4/translations",
@@ -336,12 +336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/paulbalandan/liaison-revision.git",
-                "reference": "b03ddfb0025e900e89d65b19f8f6a11a6c220f55"
+                "reference": "ec961bfa989a327c7d041561915bb3b1cf71cedc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paulbalandan/liaison-revision/zipball/b03ddfb0025e900e89d65b19f8f6a11a6c220f55",
-                "reference": "b03ddfb0025e900e89d65b19f8f6a11a6c220f55",
+                "url": "https://api.github.com/repos/paulbalandan/liaison-revision/zipball/ec961bfa989a327c7d041561915bb3b1cf71cedc",
+                "reference": "ec961bfa989a327c7d041561915bb3b1cf71cedc",
                 "shasum": ""
             },
             "require": {
@@ -395,7 +395,7 @@
                 "issues": "https://github.com/paulbalandan/liaison-revision/issues",
                 "source": "https://github.com/paulbalandan/liaison-revision"
             },
-            "time": "2021-01-14T16:04:01+00:00"
+            "time": "2021-01-16T17:11:57+00:00"
         },
         {
             "name": "psr/log",
