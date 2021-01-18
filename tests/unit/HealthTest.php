@@ -32,6 +32,7 @@ class HealthTest extends CIUnitTestCase
 
         // First check in .env
         if (is_file(HOMEPATH . '.env')) {
+            // @phpstan-ignore-next-line
             $env = (bool) preg_grep("/^app\.baseURL = './", file(HOMEPATH . '.env'));
         }
 
