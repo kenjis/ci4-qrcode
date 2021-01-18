@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace Tests\Support;
 
 use CodeIgniter\Session\Handlers\ArrayHandler;
+use CodeIgniter\Session\SessionInterface;
 use CodeIgniter\Test\CIUnitTestCase;
 use CodeIgniter\Test\Mock\MockSession;
 use Config\Services;
 
 class SessionTestCase extends CIUnitTestCase
 {
-    /** @var SessionHandler */
+    /** @var SessionInterface */
     protected $session;
 
     public function setUp(): void
