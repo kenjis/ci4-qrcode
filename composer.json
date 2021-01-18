@@ -26,6 +26,11 @@
             "@composer dump-autoload"
         ],
         "test": "phpunit",
+        "tests": [
+            "@cs",
+            "@sa",
+            "@test"
+        ],
         "cs-fix": "phpcbf",
         "cs": "phpcs",
         "sa": [
@@ -37,6 +42,7 @@
     },
     "scripts-descriptions": {
         "test": "Run PHPUnit",
+        "tests": "Run tests and quality checks",
         "cs": "Check the coding style",
         "cs-fix": "Fix the coding style",
         "sa": "Run static analysis"
