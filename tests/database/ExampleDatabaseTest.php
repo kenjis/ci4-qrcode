@@ -10,7 +10,6 @@ use Tests\Support\DatabaseTestCase;
 use Tests\Support\Models\ExampleModel;
 
 use function assert;
-use function is_object;
 
 class ExampleDatabaseTest extends DatabaseTestCase
 {
