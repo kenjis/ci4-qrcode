@@ -20,6 +20,7 @@ $ php spark revision:update
 composer test              // Run PHPUnit
 composer cs-fix            // Fix the coding style
 composer cs                // Check the coding style
+composer sa                // Run static analysis
 composer run-script --list // List all commands
 ```
 
