@@ -5,11 +5,14 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="https://getpsalm.org/schema/config"
     xsi:schemaLocation="https://getpsalm.org/schema/config vendor/vimeo/psalm/config.xsd"
+    autoloader="vendor/codeigniter4/codeigniter4/system/Test/bootstrap.php"
 >
     <projectFiles>
         <directory name="app" />
         <ignoreFiles>
             <directory name="vendor" />
+            <directory name="app/Config" />
+            <directory name="app/Views" />
         </ignoreFiles>
     </projectFiles>
 </psalm>
