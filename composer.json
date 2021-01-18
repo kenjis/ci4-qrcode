@@ -30,8 +30,10 @@
         "cs": "phpcs",
         "sa": [
             "phpstan analyse --no-progress -c phpstan.neon",
-            "psalm --show-info=true"
-        ]
+            "psalm --show-info=true",
+            "@md"
+        ],
+        "md": "phpmd app text ./phpmd.xml --exclude */app/Config,*/app/Views"
     },
     "scripts-descriptions": {
         "test": "Run PHPUnit",
