@@ -29,7 +29,8 @@
         "cs-fix": "phpcbf",
         "cs": "phpcs",
         "sa": [
-            "phpstan analyse --no-progress -c phpstan.neon"
+            "phpstan analyse --no-progress -c phpstan.neon",
+            "psalm --show-info=true"
         ]
     },
     "scripts-descriptions": {
