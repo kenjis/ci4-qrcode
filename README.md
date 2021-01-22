@@ -18,6 +18,14 @@ This repository includes:
   - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
   - xml (enabled by default - don't turn it off)
 
+## How to Install
+
+```
+$ git clone https://github.com/kenjis/ci4-app-template.git your-project
+$ cd your-project/
+$ composer install
+```
+
 ## How to Update
 
 ```
