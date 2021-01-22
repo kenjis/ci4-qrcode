@@ -8,6 +8,16 @@ This repository includes:
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
 
+## Requirements
+
+- PHP 7.3 or later
+  - [intl](http://php.net/manual/en/intl.requirements.php)
+  - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+  - json (enabled by default - don't turn it off)
+  - [mbstring](http://php.net/manual/en/mbstring.installation.php)
+  - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+  - xml (enabled by default - don't turn it off)
+
 ## How to Update
 
 ```
@@ -38,17 +48,3 @@ More information about the plans for version 4 can be found in [the announcement
 
 The user guide corresponding to this version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/). 
-
-## Server Requirements
-
-PHP version 7.3 or higher is required, with the following extensions installed: 
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
