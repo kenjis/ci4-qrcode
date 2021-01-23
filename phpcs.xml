@@ -32,6 +32,9 @@
         <exclude name="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly.ReferencedGeneralException"/>
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingNativeTypeHint"/>
         <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint"/>
+
+        <!-- Exclude rules for legacy CodeIgniter Project -->
+        <exclude name="SlevomatCodingStandard.Operators.DisallowEqualOperators.DisallowedEqualOperator"/>
     </rule>
 
     <rule ref="Squiz.Classes.ClassFileName.NoMatch">
