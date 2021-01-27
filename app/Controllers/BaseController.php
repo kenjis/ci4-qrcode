@@ -10,8 +10,6 @@ use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
 /**
- * Class BaseController
- *
  * BaseController provides a convenient place for loading components
  * and performing functions that are needed by all your controllers.
  * Extend this class in any new controllers:
