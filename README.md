@@ -4,7 +4,7 @@ This repository includes:
 
 - CodeIgniter 4.1.0
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- PHPUnit 9.5.0
+- PHPUnit 9.5.1
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
 - [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
 
