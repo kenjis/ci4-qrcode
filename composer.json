@@ -23,7 +23,8 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "@composer dump-autoload"
+            "@composer dump-autoload",
+            "php spark revision:update"
         ],
         "test": "phpunit",
         "tests": [
