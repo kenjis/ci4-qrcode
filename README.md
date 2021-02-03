@@ -2,7 +2,7 @@
 
 This repository includes:
 
-- CodeIgniter 4.1.0
+- CodeIgniter 4.1.2-dev
   - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
 - PHPUnit 9.5.1
 - [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
@@ -24,13 +24,13 @@ This repository includes:
 $ git clone https://github.com/kenjis/ci4-app-template.git your-project
 $ cd your-project/
 $ composer install
+$ git checkout -b main
 ```
 
 ## How to Update
 
 ```
 $ composer update
-$ php spark revision:update
 ```
 
 ## Available Commands
