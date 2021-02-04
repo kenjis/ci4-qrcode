@@ -48,6 +48,6 @@ class Modules extends BaseModules
 		'filters',
 		'registrars',
 		'routes',
-		'services',
+		// 'services',
 	];
 }
