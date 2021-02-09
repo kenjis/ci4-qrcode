@@ -29,7 +29,7 @@ class Filters extends BaseConfig
 	 */
 	public $globals = [
 		'before' => [
-			 'csrf',
+			'csrf',
 			// 'honeypot',
 		],
 		'after'  => [
