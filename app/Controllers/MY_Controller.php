@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-defined('BASEPATH') or exit('No direct script access allowed');
+namespace App\Controllers;
+
+use Kenjis\CI3Compatible\Core\CI_Controller;
 
 class MY_Controller extends CI_Controller
 {
@@ -28,7 +30,7 @@ class MY_Controller extends CI_Controller
     | @param $button    Feedback Button Text
     |
     */
-    function modal_feedback($type, $title, $desc, $button): void
+    protected function modal_feedback($type, $title, $desc, $button): void
     {
         $message = '
             <div id="modalFeedback" class="modal fade">

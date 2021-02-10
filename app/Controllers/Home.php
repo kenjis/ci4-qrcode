@@ -2,8 +2,21 @@
 
 declare(strict_types=1);
 
-defined('BASEPATH') or exit('No direct script access allowed');
+namespace App\Controllers;
 
+use App\Libraries\Ciqrcode;
+use App\Models\Home_model;
+use Kenjis\CI3Compatible\Core\CI_Input;
+
+use function bin2hex;
+use function file_exists;
+use function mkdir;
+
+/**
+ * @property Home_model $home_model
+ * @property Ciqrcode $ciqrcode
+ * @property CI_Input $input
+ */
 class Home extends MY_Controller
 {
     /*
@@ -87,7 +100,7 @@ class Home extends MY_Controller
     |-------------------------------------------------------------------
     |
     */
-    function add_data(): void
+    function add_data()
     {
         /* Generate QR Code */
         $data = $this->input->post('content');
@@ -100,7 +113,7 @@ class Home extends MY_Controller
             $this->modal_feedback('error', 'Error', 'Add Data Failed', 'Try again');
         }
 
-        redirect('/');
+        return redirect()->to(site_url('/'));
     }
 
     /*
@@ -111,11 +124,11 @@ class Home extends MY_Controller
     | @param $id    ID Data
     |
     */
-    function edit_data($id): void
+    function edit_data($id)
     {
         /* Old QR Data */
         $old_data = $this->home_model->fetch_data($id);
-        $old_file = $old_data['file'];
+        $old_file = FCPATH . $old_data['file'];
 
         /* Generate New QR Code */
         $data = $this->input->post('content');
@@ -128,7 +141,7 @@ class Home extends MY_Controller
             $this->modal_feedback('error', 'Error', 'Edit Data Failed', 'Try again');
         }
 
-        redirect('/');
+        return redirect()->to(site_url('/'));
     }
 
     /*
@@ -139,7 +152,7 @@ class Home extends MY_Controller
     | @param $id    ID Data
     |
     */
-    function remove_data($id): void
+    function remove_data($id)
     {
         /* Current QR Data */
         $qr_data = $this->home_model->fetch_data($id);
@@ -152,6 +165,6 @@ class Home extends MY_Controller
             $this->modal_feedback('error', 'Error', 'Delete Data Failed', 'Try again');
         }
 
-        redirect('/');
+        return redirect()->to(site_url('/'));
     }
 }

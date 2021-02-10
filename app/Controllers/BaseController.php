@@ -7,6 +7,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
+use Kenjis\CI3Compatible\Library\CI_Session;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -18,6 +19,9 @@ use Psr\Log\LoggerInterface;
  * For security be sure to declare any new methods as protected or private.
  */
 
+/**
+ * @property CI_Session $session
+ */
 class BaseController extends Controller
 {
     /**
