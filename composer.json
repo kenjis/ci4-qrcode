@@ -1,8 +1,6 @@
 {
-    "name": "codeigniter4/appstarter",
     "type": "project",
-    "description": "CodeIgniter4 starter app",
-    "homepage": "https://codeigniter.com",
+    "description": "Codeigniter 4 - QR Code",
     "license": "MIT",
     "require": {
         "php": ">=7.3",
@@ -48,11 +46,6 @@
         "cs": "Check the coding style",
         "cs-fix": "Fix the coding style",
         "sa": "Run static analysis"
-    },
-    "support": {
-        "forum": "http://forum.codeigniter.com/",
-        "source": "https://github.com/codeigniter4/CodeIgniter4",
-        "slack": "https://codeigniterchat.slack.com"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
