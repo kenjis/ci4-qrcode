@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Material Icons';
+    src: url('MaterialIcons-Regular.woff2') format('woff2'),
+        url('MaterialIcons-Regular.woff') format('woff'),
+        url('MaterialIcons-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
