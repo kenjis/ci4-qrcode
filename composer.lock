@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35842265ffa7786dafbce81c775b9f27",
+    "content-hash": "5b5c09bda526db028c485a2110c3166d",
     "packages": [
         {
             "name": "codeigniter4/codeigniter4",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeigniter4/CodeIgniter4.git",
-                "reference": "7dd440afd37da989c217638b7d67402c5ae910f1"
+                "reference": "302361490dbd6b7a383a268c5338ec3db6908b43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/7dd440afd37da989c217638b7d67402c5ae910f1",
-                "reference": "7dd440afd37da989c217638b7d67402c5ae910f1",
+                "url": "https://api.github.com/repos/codeigniter4/CodeIgniter4/zipball/302361490dbd6b7a383a268c5338ec3db6908b43",
+                "reference": "302361490dbd6b7a383a268c5338ec3db6908b43",
                 "shasum": ""
             },
             "require": {
@@ -34,10 +34,11 @@
                 "codeigniter4/codeigniter4-standard": "^1.0",
                 "fakerphp/faker": "^1.9",
                 "mikey179/vfsstream": "^1.6",
-                "phpstan/phpstan": "0.12.69",
+                "nette/utils": "^3.2",
+                "phpstan/phpstan": "0.12.74",
                 "phpunit/phpunit": "^9.1",
                 "predis/predis": "^1.1",
-                "rector/rector": "^0.9",
+                "rector/rector-prefixed": "^0.9",
                 "squizlabs/php_codesniffer": "^3.3"
             },
             "suggest": {
@@ -82,7 +83,7 @@
                 "slack": "https://codeigniterchat.slack.com",
                 "issues": "https://github.com/codeigniter4/CodeIgniter4/issues"
             },
-            "time": "2021-02-08T17:23:22+00:00"
+            "time": "2021-02-10T05:44:26+00:00"
         },
         {
             "name": "codeigniter4/translations",
@@ -135,6 +136,177 @@
                 "source": "https://github.com/codeigniter4/translations"
             },
             "time": "2021-02-04T07:52:45+00:00"
+        },
+        {
+            "name": "gregwar/captcha",
+            "version": "v1.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/Captcha.git",
+                "reference": "4bb668e6b40e3205a020ca5ee4ca8cff8b8780c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/Captcha/zipball/4bb668e6b40e3205a020ca5ee4ca8cff8b8780c5",
+                "reference": "4bb668e6b40e3205a020ca5ee4ca8cff8b8780c5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.3.0",
+                "symfony/finder": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.4"
+            },
+            "type": "captcha",
+            "autoload": {
+                "psr-4": {
+                    "Gregwar\\": "src/Gregwar"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Passault",
+                    "email": "g.passault@gmail.com",
+                    "homepage": "http://www.gregwar.com/"
+                },
+                {
+                    "name": "Jeremy Livingston",
+                    "email": "jeremy.j.livingston@gmail.com"
+                }
+            ],
+            "description": "Captcha generator",
+            "homepage": "https://github.com/Gregwar/Captcha",
+            "keywords": [
+                "bot",
+                "captcha",
+                "spam"
+            ],
+            "support": {
+                "issues": "https://github.com/Gregwar/Captcha/issues",
+                "source": "https://github.com/Gregwar/Captcha/tree/master"
+            },
+            "time": "2020-03-24T14:39:05+00:00"
+        },
+        {
+            "name": "kenjis/ci3-like-captcha",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kenjis/ci3-like-captcha.git",
+                "reference": "e7f2c9c50b96f18030da3cb773864138f885a57f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kenjis/ci3-like-captcha/zipball/e7f2c9c50b96f18030da3cb773864138f885a57f",
+                "reference": "e7f2c9c50b96f18030da3cb773864138f885a57f",
+                "shasum": ""
+            },
+            "require": {
+                "gregwar/captcha": "^1.1",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kenjis\\CI3Like\\Captcha\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kenji Suzuki",
+                    "homepage": "https://github.com/kenjis"
+                }
+            ],
+            "description": "CodeIgniter3-like Captcha",
+            "homepage": "https://github.com/kenjis/ci3-like-captcha",
+            "keywords": [
+                "captcha",
+                "codeigniter"
+            ],
+            "support": {
+                "issues": "https://github.com/kenjis/ci3-like-captcha/issues",
+                "source": "https://github.com/kenjis/ci3-like-captcha/tree/v1.0.0"
+            },
+            "time": "2021-02-02T06:55:49+00:00"
+        },
+        {
+            "name": "kenjis/ci3-to-4-upgrade-helper",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kenjis/ci3-to-4-upgrade-helper.git",
+                "reference": "9223e63a321186a0bea846e474b21bed094280b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kenjis/ci3-to-4-upgrade-helper/zipball/9223e63a321186a0bea846e474b21bed094280b3",
+                "reference": "9223e63a321186a0bea846e474b21bed094280b3",
+                "shasum": ""
+            },
+            "require": {
+                "kenjis/ci3-like-captcha": "^1.0",
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "codeigniter4/codeigniter4": "dev-develop",
+                "doctrine/coding-standard": "^8.1",
+                "friendsofphp/php-cs-fixer": "^2.18",
+                "kenjis/phpunit-helper": "^1.0",
+                "mikey179/vfsstream": "^1.6",
+                "phpmd/phpmd": "^2.9",
+                "phpmetrics/phpmetrics": "^2.7",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.5",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kenjis\\CI3Compatible\\": "src/CI3Compatible"
+                },
+                "files": [
+                    "src/CI3Compatible/bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kenji Suzuki",
+                    "homepage": "https://github.com/kenjis"
+                }
+            ],
+            "description": "Help upgrade from CodeIgniter3 to CodeIgniter4",
+            "homepage": "https://github.com/kenjis/ci3-to-4-upgrade-helper",
+            "keywords": [
+                "codeigniter",
+                "codeigniter3",
+                "codeigniter4"
+            ],
+            "support": {
+                "issues": "https://github.com/kenjis/ci3-to-4-upgrade-helper/issues",
+                "source": "https://github.com/kenjis/ci3-to-4-upgrade-helper/tree/1.x"
+            },
+            "time": "2021-02-08T08:10:54+00:00"
         },
         {
             "name": "kint-php/kint",
@@ -577,6 +749,67 @@
                 }
             ],
             "time": "2021-01-27T10:01:46+00:00"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v5.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "4adc8d172d602008c204c2e16956f99257248e03"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/4adc8d172d602008c204c2e16956f99257248e03",
+                "reference": "4adc8d172d602008c204c2e16956f99257248e03",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Finds files and directories via an intuitive fluent interface",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/finder/tree/v5.2.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-28T22:06:19+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -5058,67 +5291,6 @@
             "time": "2020-09-07T11:33:47+00:00"
         },
         {
-            "name": "symfony/finder",
-            "version": "v5.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "4adc8d172d602008c204c2e16956f99257248e03"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/4adc8d172d602008c204c2e16956f99257248e03",
-                "reference": "4adc8d172d602008c204c2e16956f99257248e03",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Finder\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Finds files and directories via an intuitive fluent interface",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.3"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-01-28T22:06:19+00:00"
-        },
-        {
             "name": "symfony/options-resolver",
             "version": "v5.2.3",
             "source": {
@@ -5833,7 +6005,8 @@
     "stability-flags": {
         "codeigniter4/translations": 20,
         "codeigniter4/codeigniter4": 20,
-        "liaison/revision": 20
+        "liaison/revision": 20,
+        "kenjis/ci3-to-4-upgrade-helper": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

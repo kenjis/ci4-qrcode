@@ -8,7 +8,8 @@
         "php": ">=7.3",
         "codeigniter4/translations": "dev-develop",
         "codeigniter4/codeigniter4": "dev-develop",
-        "liaison/revision": "1.x-dev"
+        "liaison/revision": "1.x-dev",
+        "kenjis/ci3-to-4-upgrade-helper": "1.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
