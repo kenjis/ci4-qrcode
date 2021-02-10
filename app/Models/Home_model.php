@@ -1,7 +1,10 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home_model extends CI_Model 
+declare(strict_types=1);
+
+defined('BASEPATH') or exit('No direct script access allowed');
+
+class Home_model extends CI_Model
 {
     var $tbl_qr = 'tbl_qr';
 
@@ -9,11 +12,12 @@ class Home_model extends CI_Model
     |-------------------------------------------------------------------
     | Fetch All QR Data
     |-------------------------------------------------------------------
-    | 
+    |
     */
     function fetch_datas()
     {
         $query = $this->db->get($this->tbl_qr);
+
         return $query->result_array();
     }
 
@@ -21,13 +25,14 @@ class Home_model extends CI_Model
     |-------------------------------------------------------------------
     | Fetch QR Row Data
     |-------------------------------------------------------------------
-    | 
+    |
     */
     function fetch_data($id)
     {
         $this->db->where('id', $id);
 
         $query = $this->db->get($this->tbl_qr);
+
         return $query->row_array();
     }
 
@@ -42,7 +47,8 @@ class Home_model extends CI_Model
     function insert_data($qr)
     {
         $this->db->insert($this->tbl_qr, $qr);
-        return ($this->db->affected_rows());
+
+        return $this->db->affected_rows();
     }
 
     /*
@@ -66,7 +72,7 @@ class Home_model extends CI_Model
         $this->db->update($this->tbl_qr, $qr);
         $this->db->trans_complete();
 
-        return ($this->db->affected_rows() || $this->db->trans_status());
+        return $this->db->affected_rows() || $this->db->trans_status();
     }
 
     /*
@@ -86,6 +92,7 @@ class Home_model extends CI_Model
         /* Delete QR Code from Database  */
         $this->db->where('id', $id);
         $this->db->delete($this->tbl_qr);
-        return ($this->db->affected_rows());
+
+        return $this->db->affected_rows();
     }
 }

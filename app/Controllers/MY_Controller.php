@@ -1,16 +1,19 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+
+declare(strict_types=1);
+
+defined('BASEPATH') or exit('No direct script access allowed');
 
 class MY_Controller extends CI_Controller
 {
-    
     /*
     |-------------------------------------------------------------------
-    | Construct 
+    | Construct
     |-------------------------------------------------------------------
-    | 
+    |
     */
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
     }
 
@@ -25,24 +28,24 @@ class MY_Controller extends CI_Controller
     | @param $button    Feedback Button Text
     |
     */
-    function modal_feedback($type, $title, $desc, $button)
+    function modal_feedback($type, $title, $desc, $button): void
     {
         $message = '
             <div id="modalFeedback" class="modal fade">
                 <div class="modal-dialog modal-dialog-centered modal-confirm">
                     <div class="modal-content">
             
-                        <div class="modal-header-'.$type.'">
+                        <div class="modal-header-' . $type . '">
                             <div class="icon-box">
-                                <i class="material-icons">'. ($type == "success" ? "&#xE876;" : "&#xE5CD;") .'</i>
+                                <i class="material-icons">' . ($type == 'success' ? '&#xE876;' : '&#xE5CD;') . '</i>
                             </div>
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                         </div>
                         
                         <div class="modal-body text-center">
-                            <h4>'.$title.'</h4>	
-                            <p>'.$desc.'</p>
-                            <button class="btn" data-dismiss="modal">'.$button.'</button>
+                            <h4>' . $title . '</h4>	
+                            <p>' . $desc . '</p>
+                            <button class="btn" data-dismiss="modal">' . $button . '</button>
                         </div>
                         
                     </div>
@@ -51,5 +54,4 @@ class MY_Controller extends CI_Controller
         ';
         $this->session->set_flashdata('modal_message', $message);
     }
-
 }
