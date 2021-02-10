@@ -2,6 +2,20 @@
 
 declare(strict_types=1);
 
+namespace App\Libraries;
+
+use QRcode;
+use QRimage;
+
+use function array_filter;
+use function count;
+use function define;
+use function defined;
+use function in_array;
+use function is_array;
+use function max;
+use function min;
+
 /**
  * PHP QR Code porting for Codeigniter
  *
@@ -12,23 +26,23 @@ declare(strict_types=1);
 class Ciqrcode
 {
     var $cacheable = true;
-    var $cachedir = 'application/cache/';
-    var $errorlog = 'application/logs/';
+    var $cachedir = WRITEPATH . 'cache/';
+    var $errorlog = WRITEPATH . 'logs/';
     var $quality = true;
     var $size = 1024;
 
     function __construct($config = [])
     {
-        include APPPATH . '/third_party/qrcode/qrconst.php';
-        include APPPATH . '/third_party/qrcode/qrtools.php';
-        include APPPATH . '/third_party/qrcode/qrspec.php';
-        include APPPATH . '/third_party/qrcode/qrimage.php';
-        include APPPATH . '/third_party/qrcode/qrinput.php';
-        include APPPATH . '/third_party/qrcode/qrbitstream.php';
-        include APPPATH . '/third_party/qrcode/qrsplit.php';
-        include APPPATH . '/third_party/qrcode/qrrscode.php';
-        include APPPATH . '/third_party/qrcode/qrmask.php';
-        include APPPATH . '/third_party/qrcode/qrencode.php';
+        include APPPATH . '/ThirdParty/qrcode/qrconst.php';
+        include APPPATH . '/ThirdParty/qrcode/qrtools.php';
+        include APPPATH . '/ThirdParty/qrcode/qrspec.php';
+        include APPPATH . '/ThirdParty/qrcode/qrimage.php';
+        include APPPATH . '/ThirdParty/qrcode/qrinput.php';
+        include APPPATH . '/ThirdParty/qrcode/qrbitstream.php';
+        include APPPATH . '/ThirdParty/qrcode/qrsplit.php';
+        include APPPATH . '/ThirdParty/qrcode/qrrscode.php';
+        include APPPATH . '/ThirdParty/qrcode/qrmask.php';
+        include APPPATH . '/ThirdParty/qrcode/qrencode.php';
 
         $this->initialize($config);
     }
@@ -36,8 +50,8 @@ class Ciqrcode
     public function initialize($config = []): void
     {
         $this->cacheable = $config['cacheable'] ?? $this->cacheable;
-        $this->cachedir = $config['cachedir'] ?? FCPATH . $this->cachedir;
-        $this->errorlog = $config['errorlog'] ?? FCPATH . $this->errorlog;
+        $this->cachedir = $config['cachedir'] ?? $this->cachedir;
+        $this->errorlog = $config['errorlog'] ?? $this->errorlog;
         $this->quality = $config['quality'] ?? $this->quality;
         $this->size = $config['size'] ?? $this->size;
 
