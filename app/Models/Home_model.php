@@ -2,8 +2,16 @@
 
 declare(strict_types=1);
 
-defined('BASEPATH') or exit('No direct script access allowed');
+namespace App\Models;
 
+use Kenjis\CI3Compatible\Core\CI_Model;
+use Kenjis\CI3Compatible\Database\CI_DB_query_builder;
+
+use function unlink;
+
+/**
+ * @property CI_DB_query_builder $db
+ */
 class Home_model extends CI_Model
 {
     var $tbl_qr = 'tbl_qr';
