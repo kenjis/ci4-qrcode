@@ -39,7 +39,7 @@ class Home extends MY_Controller
     */
     function index(): void
     {
-        $data['title']   = 'Codeigniter 3 - QR Code';
+        $data['title']   = 'Codeigniter 4 - QR Code';
         $data['qr_list'] = $this->home_model->fetch_datas();
 
         $this->load->view('frontend/header', $data);
