@@ -27,7 +27,21 @@ class BaseController extends Controller
      *
      * @var array<string>
      */
-    protected $helpers = [];
+    protected $helpers = [
+        'file',
+        'form',
+        'url',
+    ];
+
+    /**
+     * CI3's $autoload['libraries']
+     *
+     * @var array
+     */
+    protected $libraries = [
+        'database',
+        'session',
+    ];
 
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger): void
     {
