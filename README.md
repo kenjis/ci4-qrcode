@@ -1,64 +1,61 @@
-# CodeIgniter 4 Application Template
+# Notice
 
-This repository includes:
+This repository is a sample of [Codeigniter 3 - QR Code](https://github.com/kenjis/codeigniter3-qrcode) upgraded to CodeIgniter4 using *[ci3-to-4-upgrade-helper](https://github.com/kenjis/ci3-to-4-upgrade-helper)*.
 
-- CodeIgniter 4.1.2-dev
-  - [Translations for CodeIgniter 4 System Messages](https://github.com/codeigniter4/translations) dev-develop
-- PHPUnit 9.5.2
-- [Liaison Revision](https://github.com/paulbalandan/liaison-revision) 1.x-dev
-- [bear/qatools](https://github.com/bearsunday/BEAR.QATools) 1.9.12
+The Original Codeigniter 3 - QR Code is <https://github.com/chriscelnovian/codeigniter3-qrcode>.
 
-## Requirements
+# Codeigniter 4 - QR Code
 
-- PHP 7.3 or later
-  - [intl](http://php.net/manual/en/intl.requirements.php)
-  - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-  - json (enabled by default - don't turn it off)
-  - [mbstring](http://php.net/manual/en/mbstring.installation.php)
-  - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-  - xml (enabled by default - don't turn it off)
+Codeigniter 4 QR Code Generator
 
-## How to Install
+![Screenshot](./screenshot/1-home.png)
 
-```
-$ git clone https://github.com/kenjis/ci4-app-template.git your-project
-$ cd your-project/
-$ composer install
-$ git checkout -b main
-```
+## Description
+Kind of sample features :
+- Save QR Code Image to Directory and Data to Database
+- CRUD Operation
 
-## How to Update
+![Screenshot](./screenshot/2-add.png)
 
-```
-$ composer update
-```
+![Screenshot](./screenshot/3-show.png)
 
-## Changes from the CI4 Default Configuration
+![Screenshot](./screenshot/4-edit.png)
 
-- CSRF filter is enabled. [app/Config/Filters.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Filters.php#L32).
-- Auto-Discovery of services is disabled. [app/Config/Modules.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Modules.php#L51).
-- `Config\Services` extends `CodeIgniter\Config\Services`. [app/Config/Services.php](https://github.com/kenjis/ci4-app-template/blob/ci4-app-template/app/Config/Services.php).
+![Screenshot](./screenshot/5-delete.png)
 
-## Available Commands
+## Resources
+- Codeigniter 4.1.2-dev
+- CI QR Code 1.0
+- Bootstrap 4.6.0
+- Font Awesome 5.15.2
+- jQuery 3.5.1
+- jQuery UI 1.12.1
+- Popper 2.6.0
+
+## Installation
+
+### Setup Database
 
 ```
-composer test              // Run PHPUnit
-composer cs-fix            // Fix the coding style
-composer cs                // Check the coding style
-composer sa                // Run static analysis
-composer run-script --list // List all commands
+$ mysql -uroot
 ```
 
-## What is CodeIgniter?
+```
+mysql> CREATE DATABASE `codeigniter3_qrcode` DEFAULT CHARACTER SET utf8mb4;
+```
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
-More information can be found at the [official site](http://codeigniter.com).
+```
+$ mysql -uroot codeigniter3_qrcode < 'database/codeigniter3_qrcode.sql'
+```
 
-This repository holds a composer-installable app starter.
-It has been built from the 
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+### Configure
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+```sh-session
+$ cp env .env
+```
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/). 
+### Run built-in Web Server
+
+```
+$ bin/server.sh
+```
