@@ -57,5 +57,5 @@ $ cp env .env
 ### Run built-in Web Server
 
 ```
-$ bin/server.sh
+$ php spark serve
 ```
